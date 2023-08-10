@@ -96,7 +96,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
   <script>
-  var map = L.map("map").setView([62.2639, 74.4823], 13);
+  var map = L.map("map").setView([62.2639, 74.4823], 10);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
@@ -111,8 +111,8 @@
     L.marker([62.263, 74.478], { icon: redMarker }).addTo(map);
 
     var imageUrl = "hhh.jpg"; // Укажите путь к локальному изображению img1.png
-    var imageBounds = [[62.6675, 74.9915], [62.1390, 74.2560]]; // Границы изображения в географических координатах
-
+    var imageBounds = [[62.6322, 74.9996], [62.0490, 73.8081]]; // Границы изображения в географических координатах
+// Верх, Право, Низ, Лево
     L.imageOverlay(imageUrl, imageBounds, { opacity: 0.6 }).addTo(map);
 
     function onMapClick(e) {
